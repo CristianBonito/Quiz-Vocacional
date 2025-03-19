@@ -14,10 +14,30 @@
 
   <main class="contenido">
     <div id="resultado-container">
-      <h2 id="resultado"></h2>
+      <h2 id="mensajeResultado"></h2> <!-- Modificado aquí para mostrar el mensaje "Tu vocación es" -->
       <p id="explicacion"></p>
       <button onclick="location.href='index.html'">Volver al inicio</button>
     </div>
   </main>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const resultado = localStorage.getItem("resultado");
+      const explicacion = localStorage.getItem("explicacion");
+
+      // Mostrar mensaje con la vocación
+      document.getElementById("mensajeResultado").textContent = `Tu vocación es ${resultado}`;
+
+      // Mostrar la explicación
+      document.getElementById("explicacion").textContent = explicacion;
+    });
+  </script>
+
+      <!-- Contenedor con mensaje de comunidad -->
+      <div id="comunidad-container">
+        <p>Forma parte de nuestra comunidad Jaguar #OrgulloJaguar</p>
+      </div>
+      
 </body>
 </html>
+
