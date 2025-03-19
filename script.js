@@ -1,36 +1,36 @@
 const preguntas = [
-    {
-      pregunta: "¿Te gusta resolver problemas complejos y lógicos?",
-      opciones: ["Sí, mucho", "Prefiero algo más práctico"],
-      carrera: ["Sistemas Computacionales", "Informática"],
-    },
-    {
-      pregunta: "¿Te interesa desarrollar aplicaciones móviles o web?",
-      opciones: ["Sí, me encanta", "Prefiero gestionar redes"],
-      carrera: ["Sistemas Computacionales", "Informática"],
-    },
-    {
-      pregunta: "¿Te gusta la programación más que la administración?",
-      opciones: ["Sí, definitivamente", "Prefiero organizar información"],
-      carrera: ["Sistemas Computacionales", "Informática"],
-    },
-    {
-      pregunta: "¿Te interesa más la ciberseguridad o el desarrollo de software?",
-      opciones: ["Desarrollo de software", "Ciberseguridad"],
-      carrera: ["Sistemas Computacionales", "Informática"],
-    },
-    {
-      pregunta: "¿Prefieres analizar datos o gestionar sistemas?",
-      opciones: ["Analizar datos", "Gestionar sistemas"],
-      carrera: ["Sistemas Computacionales", "Informática"],
-    },
-    {
-      pregunta: "¿Te gustaría más trabajar en desarrollo o en soporte técnico?",
-      opciones: ["Desarrollo", "Soporte técnico"],
-      carrera: ["Sistemas Computacionales", "Informática"],
-    },
-  ];
-  
+  {
+    pregunta: "¿Te interesa más optimizar procesos empresariales o crear software desde cero?",
+    opciones: ["Optimizar procesos", "Crear software"],
+    carrera: ["Ingeniería en Sistemas Computacionales", "Ingeniería Informática"],
+  },
+  {
+    pregunta: "¿Qué prefieres: gestionar infraestructuras o desarrollar aplicaciones?",
+    opciones: ["Gestionar infraestructuras", "Desarrollar aplicaciones"],
+    carrera: ["Ingeniería en Sistemas Computacionales", "Ingeniería Informática"],
+  },
+  {
+    pregunta: "¿Te interesa más estudiar redes y bases de datos o diseñar interfaces?",
+    opciones: ["Redes y bases de datos", "Diseñar interfaces"],
+    carrera: ["Ingeniería en Sistemas Computacionales", "Ingeniería Informática"],
+  },
+  {
+    pregunta: "¿Prefieres trabajar en la infraestructura o en el desarrollo de software?",
+    opciones: ["Infraestructura", "Desarrollo de software"],
+    carrera: ["Ingeniería en Sistemas Computacionales", "Ingeniería Informática"],
+  },
+  {
+    pregunta: "¿Te atrae más la seguridad de los sistemas o crear programas innovadores?",
+    opciones: ["Seguridad de los sistemas", "Crear programas innovadores"],
+    carrera: ["Ingeniería en Sistemas Computacionales", "Ingeniería Informática"],
+  },
+  {
+    pregunta: "¿Prefieres administrar sistemas o desarrollar nuevas aplicaciones?",
+    opciones: ["Administrar sistemas", "Desarrollar aplicaciones"],
+    carrera: ["Ingeniería en Sistemas Computacionales", "Ingeniería Informática"],
+  },
+];
+
   let indicePregunta = 0;
   let puntaje = [0, 0]; // [Sistemas, Informática]
   
@@ -64,16 +64,20 @@ const preguntas = [
   }
   
   function mostrarResultado() {
-    let resultado = puntaje[0] > puntaje[1] ? "Sistemas Computacionales" : "Informática";
+    let resultado = puntaje[0] > puntaje[1] ? "Ingeniería en Sistemas Computacionales" : "Ingeniería Informática";
     let explicacion =
-      resultado === "Sistemas Computacionales"
-        ? "Te gusta la programación, resolver problemas complejos y crear soluciones digitales."
-        : "Te interesa la administración de sistemas, redes y bases de datos.";
+      resultado === "Ingeniería en Sistemas Computacionales"
+        ? "Te atrae la gestión de redes, la seguridad y la infraestructura tecnológica. Sistemas Computacionales te permite dominar la administración de sistemas y redes, así como optimizar procesos tecnológicos."
+        : "Te apasiona el desarrollo de software y aplicaciones. Informática se enfoca en crear soluciones digitales y gestionar bases de datos, permitiéndote diseñar herramientas innovadoras.";
   
+    // Guardar en el localStorage
     localStorage.setItem("resultado", resultado);
     localStorage.setItem("explicacion", explicacion);
+  
+    // Redirigir a la página de resultados
     location.href = "resultado.html";
   }
+  
   
   document.addEventListener("DOMContentLoaded", () => {
     if (document.getElementById("btnIniciar")) {
@@ -93,4 +97,5 @@ const preguntas = [
       );
     }
   });
+  
   
