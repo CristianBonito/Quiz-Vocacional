@@ -1,0 +1,140 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Header */
+  .header {
+    background-color: #00425a;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+  }
+  
+  /* Contenido principal */
+  .contenido {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  /* Bienvenida e inicio */
+  .bienvenida {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    margin-top: -300px;
+  }
+  
+  button {
+    background-color: #0077b6;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 15px;
+    font-size: 1.1rem;
+  }
+  
+  button:hover {
+    background-color: #00b4d8;
+  }
+  
+  /* Preguntas */
+  #quiz-container {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.85);
+    padding: 30px;
+    border-radius: 12px;
+    width: 80%;
+    max-width: 500px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    margin-top: -300px; /* Este margen mueve el contenedor hacia abajo para no cubrir la imagen */
+  }
+  
+  /* Opción de respuestas */
+  .opcion {
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+  }
+  
+  /* Resultado */
+  #resultado-container {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 12px;
+    max-width: 500px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    margin-top: -300px;
+  }
+  
+  
+  /* Footer solo en index */
+  .footer {
+    background-color: #00425a;
+    color: white;
+    text-align: center;
+    padding: 0.8rem 0;
+    width: 100%;
+    margin-top: auto;
+  }
+  
+/* Fondo con imágenes */
+#fondoInicio {
+    background-image: url("jaguarf.png");
+    background-size: auto 50%; /* El ancho se ajusta automáticamente en proporción al alto */
+    background-position: bottom; 
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Mantiene la imagen fija al hacer scroll */
+    height: 50vh; /* El fondo ocupa el 50% de la altura de la pantalla */
+  }
+  
+  #fondoPreguntas {
+    background-image: url("jaguarp.png");
+    background-size: auto 50%; /* El ancho se ajusta automáticamente en proporción al alto */
+    background-position: bottom; 
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Mantiene la imagen fija al hacer scroll */
+    height: 50vh; /* El fondo ocupa el 50% de la altura de la pantalla */
+  }
+  
+  #fondoResultado {
+    background-image: url("jaguarf.png");
+    background-size: auto 50%; /* El ancho se ajusta automáticamente en proporción al alto */
+    background-position: bottom; 
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Mantiene la imagen fija al hacer scroll */
+    height: 50vh; /* El fondo ocupa el 50% de la altura de la pantalla */
+  }
+  
+  /* Media Queries para móviles */
+  @media (max-width: 768px) {
+    .bienvenida, #quiz-container, #resultado-container {
+      width: 90%;
+      padding: 20px;
+    }
+  
+    button {
+      width: 100%;
+    }
+  }
+  
