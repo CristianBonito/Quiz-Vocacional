@@ -1,32 +1,32 @@
 const preguntas = [
   {
-    pregunta: "¿Te interesa más optimizar procesos empresariales o crear software desde cero?",
-    opciones: ["Optimizar procesos", "Crear software"],
+    pregunta: "¿Qué te interesa más?",
+    opciones: ["Crear programas y aplicaciones", "Administrar redes y datos"],
     carrera: ["Ingeniería en Sistemas Computacionales", "Ingeniería Informática"],
   },
   {
-    pregunta: "¿Qué prefieres: gestionar infraestructuras o desarrollar aplicaciones?",
-    opciones: ["Gestionar infraestructuras", "Desarrollar aplicaciones"],
+    pregunta: "¿En qué prefieres enfocarte?",
+    opciones: ["Programación y desarrollo de software", "Gestión de tecnología y seguridad"],
     carrera: ["Ingeniería en Sistemas Computacionales", "Ingeniería Informática"],
   },
   {
-    pregunta: "¿Te interesa más estudiar redes y bases de datos o diseñar interfaces?",
-    opciones: ["Redes y bases de datos", "Diseñar interfaces"],
+    pregunta: "¿Qué materias te gustan más?",
+    opciones: ["Matemáticas y lógica", "Infraestructura y redes"],
     carrera: ["Ingeniería en Sistemas Computacionales", "Ingeniería Informática"],
   },
   {
-    pregunta: "¿Prefieres trabajar en la infraestructura o en el desarrollo de software?",
-    opciones: ["Infraestructura", "Desarrollo de software"],
+    pregunta: "¿Dónde te gustaría trabajar?",
+    opciones: ["Creando software y apps", "Administrando sistemas y redes"],
     carrera: ["Ingeniería en Sistemas Computacionales", "Ingeniería Informática"],
   },
   {
-    pregunta: "¿Te atrae más la seguridad de los sistemas o crear programas innovadores?",
-    opciones: ["Seguridad de los sistemas", "Crear programas innovadores"],
+    pregunta: "¿Qué te gustaría aprender?",
+    opciones: ["Programación y desarrollo web", "Bases de datos y ciberseguridad"],
     carrera: ["Ingeniería en Sistemas Computacionales", "Ingeniería Informática"],
   },
   {
-    pregunta: "¿Prefieres administrar sistemas o desarrollar nuevas aplicaciones?",
-    opciones: ["Administrar sistemas", "Desarrollar aplicaciones"],
+    pregunta: "¿Qué problema prefieres resolver?",
+    opciones: ["Hacer que un programa funcione mejor", "Optimizar redes y seguridad de datos"],
     carrera: ["Ingeniería en Sistemas Computacionales", "Ingeniería Informática"],
   },
 ];
